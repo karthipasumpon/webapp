@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.imagecontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* 250px */
+.imgsubcontainer {
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  border: 2px solid red;
+}
+
+/* 300px */
+.imgsubcontainer img {
+  width: 100%;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+/* r - 0 - 255
+g -- 0 -255
+b - 0 -255
+
+a - alpha 0 - 1 */
+
+/* .popup-subcontainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  text-align: center;
+  width: 640px;
+  border: 2px solid red;
+  background-color: white;
+  position: relative;
+
+  i {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 48px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+
+  a.navigate {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+    background-color: yellow;
+    padding: 10px 12px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+ */
+/* :root {
+  Global Variable
+  --headingColor: blue;
+  --mainHeadFSDesktop: 54px;
+  --mainHeadFSMobile: 36px;
+  --Bold: "Roboto-Bold";
+  --Light: "Roboto-Light";
+  --Regular: "Roboto-Regular";
+} */
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  border: 2px solid red;
+  background-image: url("../images/social_circle.png");
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+
+ul li:nth-child(1) {
+  background-position: -46px -26px;
+}
+ul li:nth-child(1):hover {
+  background-position: -46px -95px;
+}
+
+ul li:nth-child(2) {
+  background-position: -106px -26px;
+}
+
+ul li:nth-child(2):hover {
+  background-position: -106px -95px;
+}
+
+
+
+
+ul li:nth-child(3) {
+  background-position: -166px -26px;
+}
+
+ul li:nth-child(4) {
+  background-position: -226px -26px;
+}
+
+ul li:nth-child(5) {
+  background-position: -286px -26px;
+}
+
+ul li:nth-child(6) {
+  background-position: -346px -26px;
+}
+
+ul li:nth-child(7) {
+  background-position: -406px -26px;
+}
+
+h1:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* 
+.bgimage {
+  border: 2px solid red;
+  background-image: url('../images/programs-improvement.jpg'); 
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.content img {
+  width: 100%;
+}
+
+Parent
+.content {
+  border: 2px solid red;
+  width: 450px;
+}
+Child
+.content img {
+  width: 100%;
+  display: block;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subcontainer {
+  flex-basis: 33.33%;
+  border: 2px solid red;
+}
+
+.subcontainer img {
+  width: 100%;
+  display: block;
+}
+
+
+h1 {
+  font-family: var(--Bold);
+  --headingColor : red; 
+  color: var(--headingColor);
+  font-size: var(--mainHeadFSDesktop);
+  margin: 10px 0;
+}
+
+h2 {
+  color: var(--headingColor);
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  color: var(--headingColor);
+  font-size: 30px;
+  margin: 15px 0;
+} */
+
+/* 
+@media all and (min-width: 576px) {
+  h2 {
+    font-size: 42px;
+    text-align: center;
+  }
+}
+
+ @media all and (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media all and (min-width: 992px) {
+  h2 {
+    font-size: 54px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  h1 {
+    font-size: var(--mainHeadFSMobile);
+  }
+} */

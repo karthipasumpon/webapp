@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.maincontainer {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.subcontainer {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+.subcontainer1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
